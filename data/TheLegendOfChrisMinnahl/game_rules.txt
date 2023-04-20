@@ -1,0 +1,5 @@
+Le joueur commence au point de départ. 
+Grâce aux touches directionnelles, il peut se déplacer dans le musée. 
+Il doit d’abord récupérer l’objet, puis rejoindre le point d’arrivée. 
+Tout cela sans se faire repérer par les différents gardes du musée, qui réalise des rondes.
+Pour cela, quand il se trouve sur un socle, il peut se transformer en statue en appuyant sur espace pour ne pas se faire repérer.

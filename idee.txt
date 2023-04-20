@@ -1,0 +1,84 @@
+gameplay:
+-jeu en 2D topdown (comme pokémon, ou Zelda : A link to the past)
+.mouvement : souris
+-inventaire et autre : clavier
+-inventaire et jeu en même temps (pas de menu séparé)
+-jeu en temps réel (pas de tour par tour)
+-un seul personnage jouable
+-pas de système de bruit pour distraire les gardes (pas de jauge de discrétion sonore)
+-le joueur ne se déplace pas dans une grille, mais les murs et les gardes sont positionnés grâce à une matrice/grille
+-murs statiques
+-traces de pas des gardes pour avoir le pattern de leurs ronde
+-pas de jauge de vie
+-distractions des ennemis (lancer d'objet, fumée etc..)
+-possiblement plusieurs type d'ennemis (variation de pattern de ronde, vitesse, portée de ronde etc...)
+-le joueur peut tuer des gardes (?) s'il les approche par derrière et les attaque furtivement
+
+
+-L'inventaire comporte les items que le joueur peut utiliser:
+    -soit en cliqant sur l'item et ensuite sur activer
+    -soit en glissant l'item depuis l'inventaire jusqu'à l'endroit à être activé sur le terrain
+    Dans les 2 cas, certains items devront pouvoir être placé à des endroits précis (pour la distraction des gardes)
+-Pas de game over lorsque'un garde repère le joueur : 
+    A la place, plusieurs gardes arrivent de partout et font le tour du niveau, laissant un chance au joueur de s'échaper si possible
+    Si les gardes entrent en collision avec le joueur, c'es game over
+-Si possible avoir des cinématiques basiques (uniquement mouvement de camera) :
+    au début de chaque niveau pour faire un panning depuis l'objectif du niveau jusqu'au joueur
+-Les gardes pourront avoir deux type de vision (deux cônes de collision):
+    -un grand (lorsque le joueur entre dans celui-la, le garde affiche un symbole '!' sur sa tête, puis le garde ralentit)
+    -un petit (lorsque le joueur entre dans celui-la, le joueur est immédiatement repéré et signalé)
+    Si le joueur reste trop longtemps dans le grand cône (mettre un timer), il sera signalé également
+
+- ajouter item souris qu'on peut teleguider, que les gardes ne voient pas et qui a une camera.
+
+
+idées thème : 
+- festival
+- musée
+- truc d'anxiété
+- manoir hanté
+
+
+Manoir hanté:
+-sauver une personne prisonnière
+-des monstres/démons dans les couloirs
+-des endroits avec peu/pas de lumière à part des torches et/ou chandeliers
+
+
+
+
+
+
+
+IMPLEMENTATION
+- Game faire singleton ?
+
+
+ELEMENTS DE BASE
+- Mur demi hauteur (on ne peut pas passer, mais les gardes nous voient)
+
+
+ITEMS 
+- item pour voir les gardes sur la minimap
+- traces de pas des gardes pour avoir le pattern de leurs ronde
+- distractions des ennemis (lancer d'objet, fumée etc..)
+- tuer les gardes 
+- ralentir les gardes ?
+
+
+AMELIORATION NIVEAU
+- faire un étage ?
+- possible de perdre l'objet ?
+- enregistrement niveau
+- niveau dans la nuit avec cercle de lumière autour du joueur
+- minimap seulement ou on est passé
+- ajout d'un inventaire avec les items
+- Ajout 2e zone de vision pour les gardes (joueur peut être dedans mais pas trop longtemps)
+- panning depuis l'objectif du niveau jusqu'au joueur
+
+
+ELEMENTS MISE EN SCENE
+- Créer un logo de jeu
+- Creer histoire autour du personnage
+- Ajout musique ?
+
